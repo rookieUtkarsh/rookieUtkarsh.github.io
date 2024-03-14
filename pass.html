@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password</title>
+</head>
+<body style="background-color: black;">
+
+  
+  <form id="passwordForm">
+    <label for="password"><h2 style="color:white;">Enter Password :</h2></label>
+    <input type="password" id="password" name="password" style="color:skyblue;">
+    <button type="submit">UNLOCK!</button>
+  </form>
+
+<script>
+  document.getElementById("passwordForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent form submission
+  
+  var password = document.getElementById("password").value;
+  
+  if (password === "Ruchit6969") {
+    window.location.href = "vj.html";
+  } else {
+    alert("Incorrect password!");
+  }
+  });
+</script>
+
+</body>
+</html>
